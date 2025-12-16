@@ -22,9 +22,6 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Build project
-        run: cp src/index.html dist/index.html
-
       - name: Configure Git
         run: |
           git config --global user.name "${{ github.actor }}"
